@@ -350,6 +350,7 @@
 			},
 			{
 				"name": "Get_Metadata_Of_Last_CSV",
+				"description": "test",
 				"type": "GetMetadata",
 				"dependsOn": [],
 				"policy": {
