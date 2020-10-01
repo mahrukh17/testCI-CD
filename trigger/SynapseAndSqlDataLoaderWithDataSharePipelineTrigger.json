@@ -1,0 +1,24 @@
+{
+	"name": "SynapseAndSqlDataLoaderWithDataSharePipelineTrigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "SynapseAndSqlDataLoaderWithDataShare",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Hour",
+				"interval": 24,
+				"startTime": "2020-10-01 07:17:50Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"name": "save_current_schema_dataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "customerStorageLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "CovidBritishColumbia/Schema"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "to_detect_schema_change.csv",
+				"container": "schemas-for-comparison"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

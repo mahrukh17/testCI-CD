@@ -1,0 +1,28 @@
+{
+	"name": "source_dataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "source_linkedservice",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "CovidBritishColumbia/Sources"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "covid_tracking.csv",
+				"folderPath": "curated/covid-19/covid_BritishColumbia/latest",
+				"container": "receivedcopy"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
